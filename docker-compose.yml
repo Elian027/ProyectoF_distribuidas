@@ -31,6 +31,7 @@ services:
       - WORDPRESS_DB_USER=root
       - WORDPRESS_DB_PASSWORD=root
       - WORDPRESS_DB_NAME=replica
+      - WORDPRESS_TABLE_PREFIX=wp1_
 
   wordpress2:
     image: wordpress:latest
@@ -42,6 +43,7 @@ services:
       - WORDPRESS_DB_USER=root
       - WORDPRESS_DB_PASSWORD=root
       - WORDPRESS_DB_NAME=replica
+      - WORDPRESS_TABLE_PREFIX=wp2_
 
   wordpress3:
     image: wordpress:latest
@@ -53,6 +55,7 @@ services:
       - WORDPRESS_DB_USER=root
       - WORDPRESS_DB_PASSWORD=root
       - WORDPRESS_DB_NAME=replica
+      - WORDPRESS_TABLE_PREFIX=wp3_
 
   nginx:
     container_name: nginx
